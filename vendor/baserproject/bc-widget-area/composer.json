@@ -1,0 +1,18 @@
+{
+    "name": "baserproject/bc-widget-area",
+    "description": "BcWidgetArea plugin for baserCMS",
+    "homepage": "https://basercms.net",
+    "type": "cakephp-plugin",
+    "license": "MIT",
+    "vendor-dir": "../../vendor",
+    "autoload": {
+        "psr-4": {
+            "BcWidgetArea\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BcWidgetArea\\Test\\": "tests/"
+        }
+    }
+}

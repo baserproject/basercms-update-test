@@ -1,0 +1,23 @@
+{
+    "name": "baserproject/bc-favorite",
+    "description": "BcFavorite plugin for baserCMS",
+    "homepage": "https://basercms.net",
+    "type": "cakephp-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "BcFavorite\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BcFavorite\\Test\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "Composer\\Config::disableProcessTimeout",
+            "../../vendor/bin/phpunit --colors=always"
+        ]
+    }
+}
