@@ -528,3 +528,109 @@ Cake\Http\Runner::run() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php
 Cake\Http\Server::run() /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php, line 90
 [main] /var/www/html/webroot/index.php, line 45
 
+2024-03-07 11:52:46 notice: notEmpty() is deprecated. Use notEmptyString(), notEmptyArray(), notEmptyFile(), notEmptyDate(), notEmptyTime() or notEmptyDateTime() instead.
+/var/www/html/vendor/baserproject/bc-mail/src/Model/Table/MailMessagesTable.php, line: 233
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/baserproject/bc-mail/src/Model/Table/MailMessagesTable.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /baser/admin
+Referer URL: https://basercms-update-test.localhost/baser/admin/baser-core/users/login?redirect=%2Fbaser%2Fadmin
+Client IP: 172.19.0.3
+Trace:
+deprecationWarning /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php, line 328
+Cake\Validation\Validator::notEmpty() /var/www/html/vendor/cakephp/cakephp/src/Validation/Validator.php, line 1244
+BcMail\Model\Table\MailMessagesTable::setupValidate() /var/www/html/vendor/baserproject/bc-mail/src/Model/Table/MailMessagesTable.php, line 233
+BcMail\Model\Table\MailMessagesTable::setup() /var/www/html/vendor/baserproject/bc-mail/src/Model/Table/MailMessagesTable.php, line 95
+BcMail\Model\Entity\MailContent::getNumberOfMessages() /var/www/html/vendor/baserproject/bc-mail/src/Model/Entity/MailContent.php, line 69
+include /var/www/html/vendor/baserproject/bc-admin-third/templates/plugin/BcMail/Admin/element/Dashboard/mail_messages.php, line 34
+Cake\View\View::_evaluate() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1220
+Cake\View\View::_render() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1177
+Cake\View\View::_renderElement() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1710
+Cake\View\View::element() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 699
+BaserCore\View\Helper\BcBaserHelper::getElement() /var/www/html/vendor/baserproject/baser-core/src/View/Helper/BcBaserHelper.php, line 326
+BaserCore\View\Helper\BcBaserHelper::element() /var/www/html/vendor/baserproject/baser-core/src/View/Helper/BcBaserHelper.php, line 287
+include /var/www/html/vendor/baserproject/bc-admin-third/templates/Admin/Dashboard/index.php, line 31
+Cake\View\View::_evaluate() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1220
+Cake\View\View::_render() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1177
+Cake\View\View::render() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 808
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 774
+Cake\Controller\Controller::invokeAction() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 557
+Cake\Controller\ControllerFactory::handle() /var/www/html/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /var/www/html/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+BaserCore\Middleware\BcRedirectSubSiteMiddleware::process() /var/www/html/vendor/baserproject/baser-core/src/Middleware/BcRedirectSubSiteMiddleware.php, line 63
+Cake\Http\Runner::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+BaserCore\Middleware\BcFrontMiddleware::process() /var/www/html/vendor/baserproject/baser-core/src/Middleware/BcFrontMiddleware.php, line 46
+Cake\Http\Runner::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+BaserCore\Middleware\BcAdminMiddleware::process() /var/www/html/vendor/baserproject/baser-core/src/Middleware/BcAdminMiddleware.php, line 45
+Cake\Http\Runner::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 187
+Cake\Http\Runner::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+BaserCore\Middleware\BcRequestFilterMiddleware::process() /var/www/html/vendor/baserproject/baser-core/src/Middleware/BcRequestFilterMiddleware.php, line 79
+Cake\Http\Runner::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/webroot/index.php, line 45
+
+2024-03-07 11:52:46 notice: allowEmpty() is deprecated. Use allowEmptyString(), allowEmptyArray(), allowEmptyFile(), allowEmptyDate(), allowEmptyTime(), allowEmptyDateTime() or allowEmptyFor() instead.
+/var/www/html/vendor/baserproject/bc-mail/src/Model/Table/MailMessagesTable.php, line: 236
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/baserproject/bc-mail/src/Model/Table/MailMessagesTable.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /baser/admin
+Referer URL: https://basercms-update-test.localhost/baser/admin/baser-core/users/login?redirect=%2Fbaser%2Fadmin
+Client IP: 172.19.0.3
+Trace:
+deprecationWarning /var/www/html/vendor/cakephp/cakephp/src/Core/functions.php, line 328
+Cake\Validation\Validator::allowEmpty() /var/www/html/vendor/cakephp/cakephp/src/Validation/Validator.php, line 784
+BcMail\Model\Table\MailMessagesTable::setupValidate() /var/www/html/vendor/baserproject/bc-mail/src/Model/Table/MailMessagesTable.php, line 236
+BcMail\Model\Table\MailMessagesTable::setup() /var/www/html/vendor/baserproject/bc-mail/src/Model/Table/MailMessagesTable.php, line 95
+BcMail\Model\Entity\MailContent::getNumberOfMessages() /var/www/html/vendor/baserproject/bc-mail/src/Model/Entity/MailContent.php, line 69
+include /var/www/html/vendor/baserproject/bc-admin-third/templates/plugin/BcMail/Admin/element/Dashboard/mail_messages.php, line 34
+Cake\View\View::_evaluate() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1220
+Cake\View\View::_render() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1177
+Cake\View\View::_renderElement() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1710
+Cake\View\View::element() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 699
+BaserCore\View\Helper\BcBaserHelper::getElement() /var/www/html/vendor/baserproject/baser-core/src/View/Helper/BcBaserHelper.php, line 326
+BaserCore\View\Helper\BcBaserHelper::element() /var/www/html/vendor/baserproject/baser-core/src/View/Helper/BcBaserHelper.php, line 287
+include /var/www/html/vendor/baserproject/bc-admin-third/templates/Admin/Dashboard/index.php, line 31
+Cake\View\View::_evaluate() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1220
+Cake\View\View::_render() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 1177
+Cake\View\View::render() /var/www/html/vendor/cakephp/cakephp/src/View/View.php, line 808
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 774
+Cake\Controller\Controller::invokeAction() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 557
+Cake\Controller\ControllerFactory::handle() /var/www/html/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /var/www/html/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+BaserCore\Middleware\BcRedirectSubSiteMiddleware::process() /var/www/html/vendor/baserproject/baser-core/src/Middleware/BcRedirectSubSiteMiddleware.php, line 63
+Cake\Http\Runner::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+BaserCore\Middleware\BcFrontMiddleware::process() /var/www/html/vendor/baserproject/baser-core/src/Middleware/BcFrontMiddleware.php, line 46
+Cake\Http\Runner::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+BaserCore\Middleware\BcAdminMiddleware::process() /var/www/html/vendor/baserproject/baser-core/src/Middleware/BcAdminMiddleware.php, line 45
+Cake\Http\Runner::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 187
+Cake\Http\Runner::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+BaserCore\Middleware\BcRequestFilterMiddleware::process() /var/www/html/vendor/baserproject/baser-core/src/Middleware/BcRequestFilterMiddleware.php, line 79
+Cake\Http\Runner::handle() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner::run() /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Server::run() /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/webroot/index.php, line 45
+
